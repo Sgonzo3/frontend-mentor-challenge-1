@@ -1,0 +1,126 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/background-image.png");
+    background-size: cover;
+  }
+  
+#order-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    height: 80%;
+    max-height: 40rem;
+    width:90%;
+    max-width: 21rem;
+    border: 0px solid black;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 0 0 0 0;
+    background-color: white;
+}
+
+#order-card section p {
+    color: grey;
+    font-weight: 500;
+    margin: 0 2rem;
+}
+
+.card-image {
+    background: aqua;
+    width: 100%;
+    height: 25%;
+    align-self: flex-start;
+}
+
+.order-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: ghostwhite;
+}
+
+.order-image-container {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.order-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-shadow: 3px 2px 0 black ;
+}
+
+.order-description-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.order-link-container {
+    margin: 1rem;
+}
+
+.order-link-container a:hover {
+    color: purple
+}
+
+.order-link-container a:hover {
+    color: rgba(128, 0, 128, 0.507)
+}
+
+.payment-button {
+    width: 90%;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: 0px;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(43, 19, 151);
+    box-shadow: 0 2rem 1rem rgb(49, 49, 49, 0.18);
+}
+
+.payment-button:hover {
+    transition: all 300ms ease-in-out ;
+    background-color: rgba(43, 19, 151, 0.603);
+}
+
+.cancel-button {
+    width: 90%;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: 0px;
+    font-weight: 800;
+    color: rgb(63, 63, 63, 0.8);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.cancel-button:hover {
+    transition: all 300ms ease-in-out ;
+    color: rgba(63, 63, 63, 0.6);
+}
+
+@media screen and (min-width: 800px) {
+    #order-card {
+        max-width: 25rem;
+    }
+}
